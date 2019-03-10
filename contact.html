@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appsan Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: chocolate;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: coral;
+        }
+        
+        .container {
+            border-radius: 5px;
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .button {
+            display: inline;
+            background: #4E9CAF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .button:hover {
+            display: inline;
+            background: rgb(151, 215, 231);
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .button:active {
+            display: inline;
+            background: rgb(2, 66, 82);
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body background="bg2.jpg">
+    <br/>
+    <a class="button" href="appsan.html">About Us</a>
+    <a class="button" href="services.html">Services</a>
+    <a class="button" href="career_page.html">Career</a>
+    <a class="button" href="contact.html">Contact</a>
+    <center>
+        <h3 style="color:chocolate;">Contact Form</h3>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
